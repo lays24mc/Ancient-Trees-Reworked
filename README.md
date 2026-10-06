@@ -10,6 +10,10 @@ A rewrite of [Ancient Trees / Dendrology](https://github.com/scottkillen-minecra
 > has survived. In their wisdom, the Ancient Ones foresaw the Extinction and took steps to preserve trees within chests hidden in the
 > world. It is tragic that, for all the good they did, the Ancient Ones could not save themselves..._
 
+## Note
+
+This is a private hobby project. I port mods for fun in my free time, so I cannot guarantee compatibility with other mods.
+
 ## Features
 
 Every species has a complete wood family: Log, Wood, Stripped Log, Stripped Wood, Planks, Stairs, Slab, Fence, Fence Gate, Door,
