@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "ancient_trees:block/salyx_leaves"
+  }
+}

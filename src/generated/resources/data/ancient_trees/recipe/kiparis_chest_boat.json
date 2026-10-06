@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chest_boat",
+  "ingredients": [
+    "minecraft:chest",
+    "ancient_trees:kiparis_boat"
+  ],
+  "result": {
+    "id": "ancient_trees:kiparis_chest_boat"
+  }
+}

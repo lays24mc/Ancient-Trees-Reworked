@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ancient_trees:block/nucis_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ancient_trees:block/nucis_wood"
+    },
+    "axis=z": {
+      "model": "ancient_trees:block/nucis_wood",
+      "x": 90
+    }
+  }
+}

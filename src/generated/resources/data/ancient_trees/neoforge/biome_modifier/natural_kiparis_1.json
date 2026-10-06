@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": "ancient_trees:natural_kiparis_1",
+  "step": "vegetal_decoration"
+}

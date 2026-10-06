@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:tuopa_leaves",
+  "log": "ancient_trees:tuopa_log",
+  "shape": "tuopa"
+}

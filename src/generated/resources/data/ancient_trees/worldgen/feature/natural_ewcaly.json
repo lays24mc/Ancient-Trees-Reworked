@@ -1,0 +1,13 @@
+{
+  "type": "ancient_trees:random_tree",
+  "trees": [
+    {
+      "feature": "ancient_trees:ewcaly",
+      "weight": 5
+    },
+    {
+      "feature": "ancient_trees:ewcaly_large",
+      "weight": 2
+    }
+  ]
+}

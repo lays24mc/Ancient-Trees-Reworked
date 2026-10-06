@@ -1,0 +1,13 @@
+{
+  "type": "ancient_trees:random_tree",
+  "trees": [
+    {
+      "feature": "ancient_trees:porffor",
+      "weight": 9
+    },
+    {
+      "feature": "ancient_trees:porffor_large",
+      "weight": 1
+    }
+  ]
+}

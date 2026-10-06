@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_pressure_plate",
+  "key": {
+    "#": "ancient_trees:kiparis_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "ancient_trees:kiparis_pressure_plate"
+  }
+}

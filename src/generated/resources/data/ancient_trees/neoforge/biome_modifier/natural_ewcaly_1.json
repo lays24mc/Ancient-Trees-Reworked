@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_badlands",
+  "features": "ancient_trees:natural_ewcaly_1",
+  "step": "vegetal_decoration"
+}

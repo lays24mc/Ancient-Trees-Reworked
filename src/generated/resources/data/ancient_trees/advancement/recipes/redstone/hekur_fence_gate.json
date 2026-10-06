@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hekur_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancient_trees:hekur_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "ancient_trees:hekur_fence_gate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hekur_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancient_trees:hekur_fence_gate"
+    ]
+  }
+}

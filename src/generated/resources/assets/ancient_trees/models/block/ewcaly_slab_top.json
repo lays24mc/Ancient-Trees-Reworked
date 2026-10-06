@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ancient_trees:block/ewcaly_planks",
+    "side": "ancient_trees:block/ewcaly_planks",
+    "top": "ancient_trees:block/ewcaly_planks"
+  }
+}

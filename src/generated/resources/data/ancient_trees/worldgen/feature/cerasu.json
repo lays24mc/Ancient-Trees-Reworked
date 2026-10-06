@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:cerasu_leaves",
+  "log": "ancient_trees:cerasu_log",
+  "shape": "classic"
+}

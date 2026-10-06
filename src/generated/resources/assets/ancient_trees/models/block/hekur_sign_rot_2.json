@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_sign_rot_2",
+  "textures": {
+    "all": "ancient_trees:block/hekur_sign",
+    "particle": "ancient_trees:block/hekur_planks"
+  }
+}

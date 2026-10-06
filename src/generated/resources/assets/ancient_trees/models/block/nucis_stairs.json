@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ancient_trees:block/nucis_planks",
+    "side": "ancient_trees:block/nucis_planks",
+    "top": "ancient_trees:block/nucis_planks"
+  }
+}

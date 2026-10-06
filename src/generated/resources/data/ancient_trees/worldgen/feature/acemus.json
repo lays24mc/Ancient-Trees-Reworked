@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:acemus_leaves",
+  "log": "ancient_trees:acemus_log",
+  "shape": "classic"
+}

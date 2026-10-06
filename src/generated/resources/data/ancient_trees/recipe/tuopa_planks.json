@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    "#ancient_trees:tuopa_logs"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancient_trees:tuopa_planks"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "ancient_trees:random_tree",
+  "trees": [
+    {
+      "feature": "ancient_trees:nucis",
+      "weight": 1
+    }
+  ]
+}

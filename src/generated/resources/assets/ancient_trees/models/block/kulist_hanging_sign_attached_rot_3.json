@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_attached_hanging_sign_rot_3",
+  "textures": {
+    "all": "ancient_trees:block/kulist_hanging_sign",
+    "particle": "ancient_trees:block/kulist_stripped_log"
+  }
+}

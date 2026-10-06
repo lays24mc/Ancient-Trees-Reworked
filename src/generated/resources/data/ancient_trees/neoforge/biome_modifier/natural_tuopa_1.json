@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_mountain",
+  "features": "ancient_trees:natural_tuopa_1",
+  "step": "vegetal_decoration"
+}

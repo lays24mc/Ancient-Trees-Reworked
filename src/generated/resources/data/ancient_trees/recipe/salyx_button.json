@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    "ancient_trees:salyx_planks"
+  ],
+  "result": {
+    "id": "ancient_trees:salyx_button"
+  }
+}

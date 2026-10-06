@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:kiparis_leaves",
+  "log": "ancient_trees:kiparis_log",
+  "shape": "kiparis"
+}

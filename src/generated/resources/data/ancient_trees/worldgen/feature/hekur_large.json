@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:hekur_leaves",
+  "log": "ancient_trees:hekur_log",
+  "shape": "hekur_large"
+}

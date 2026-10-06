@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "ancient_trees:block/kiparis_door_bottom",
+    "top": "ancient_trees:block/kiparis_door_top"
+  }
+}

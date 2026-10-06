@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kiparis_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancient_trees:kiparis_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "ancient_trees:kiparis_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kiparis_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancient_trees:kiparis_pressure_plate"
+    ]
+  }
+}

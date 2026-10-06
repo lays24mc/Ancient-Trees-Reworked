@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "ancient_trees:cerasu_door",
+            "state": {
+              "half": "lower"
+            }
+          },
+          "name": "ancient_trees:cerasu_door"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "ancient_trees:blocks/cerasu_door"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_hanging_sign_rot_1",
+  "textures": {
+    "all": "ancient_trees:block/delnas_hanging_sign",
+    "particle": "ancient_trees:block/delnas_stripped_log"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 600
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spruce_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:birch_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jungle_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:acacia_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dark_oak_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cherry_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pale_oak_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:acemus_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:cedrum_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:cerasu_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:delnas_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:ewcaly_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:hekur_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:kiparis_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:kulist_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:lata_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:nucis_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:porffor_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:salyx_sapling",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:tuopa_sapling",
+          "weight": 10
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "ancient_trees:gameplay/parcel"
+}

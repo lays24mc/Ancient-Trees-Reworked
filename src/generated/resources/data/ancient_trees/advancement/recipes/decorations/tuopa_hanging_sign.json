@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "ancient_trees:tuopa_hanging_sign"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tuopa_stripped_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancient_trees:tuopa_stripped_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tuopa_stripped_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancient_trees:tuopa_hanging_sign"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:kulist_leaves",
+  "log": "ancient_trees:kulist_log",
+  "shape": "kulist"
+}

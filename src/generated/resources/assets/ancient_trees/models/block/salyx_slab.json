@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ancient_trees:block/salyx_planks",
+    "side": "ancient_trees:block/salyx_planks",
+    "top": "ancient_trees:block/salyx_planks"
+  }
+}

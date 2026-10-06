@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ancient_trees:hekur_planks"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "ancient_trees:blocks/hekur_planks"
+}

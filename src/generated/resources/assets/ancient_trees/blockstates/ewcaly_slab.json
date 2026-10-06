@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancient_trees:block/ewcaly_slab"
+    },
+    "type=double": {
+      "model": "ancient_trees:block/ewcaly_planks"
+    },
+    "type=top": {
+      "model": "ancient_trees:block/ewcaly_slab_top"
+    }
+  }
+}

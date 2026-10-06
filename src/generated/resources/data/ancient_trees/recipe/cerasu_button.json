@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    "ancient_trees:cerasu_planks"
+  ],
+  "result": {
+    "id": "ancient_trees:cerasu_button"
+  }
+}

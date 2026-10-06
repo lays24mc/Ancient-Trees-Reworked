@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:nucis_leaves",
+  "log": "ancient_trees:nucis_log",
+  "shape": "nucis"
+}

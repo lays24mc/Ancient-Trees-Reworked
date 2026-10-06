@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "ancient_trees:block/hekur_door_bottom",
+    "top": "ancient_trees:block/hekur_door_top"
+  }
+}

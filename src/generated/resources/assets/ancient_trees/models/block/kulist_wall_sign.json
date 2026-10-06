@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_wall_sign",
+  "textures": {
+    "all": "ancient_trees:block/kulist_sign",
+    "particle": "ancient_trees:block/kulist_planks"
+  }
+}

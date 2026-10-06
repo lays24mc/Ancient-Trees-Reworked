@@ -1,0 +1,6 @@
+{
+  "type": "ancient_trees:tree",
+  "leaves": "ancient_trees:porffor_leaves",
+  "log": "ancient_trees:porffor_log",
+  "shape": "classic"
+}

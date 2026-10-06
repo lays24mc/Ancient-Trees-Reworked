@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acemus_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancient_trees:acemus_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "ancient_trees:acemus_button"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acemus_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancient_trees:acemus_button"
+    ]
+  }
+}
