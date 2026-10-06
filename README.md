@@ -2,67 +2,45 @@
 
 # Ancient Trees Reworked
 
-Thirteen species of ancient trees for Minecraft, rebuilt from scratch for **Minecraft 26.3** and **NeoForge**.
+Thirteen species of ancient trees for Minecraft, rebuilt for **Minecraft 26.3** and **NeoForge**.
 
-This is a rewrite of [Ancient Trees / Dendrology](https://github.com/scottkillen-minecraft-mods/ancient-trees) (Minecraft 1.7.10, Forge)
-by ScottKillen, Blorph and Ruyuna. Tree shapes, species and textures follow the original; the code is new.
+A rewrite of [Ancient Trees / Dendrology](https://github.com/scottkillen-minecraft-mods/ancient-trees) by ScottKillen, Blorph and Ruyuna.
 
 > _In the time before The Fall, the world was vibrant, teeming with life. The Fall changed the world and only a portion of what was
 > has survived. In their wisdom, the Ancient Ones foresaw the Extinction and took steps to preserve trees within chests hidden in the
 > world. It is tragic that, for all the good they did, the Ancient Ones could not save themselves..._
->
-> (from the original mod description)
-
-## Requirements
-
-| | |
-|---|---|
-| Minecraft | 26.3 |
-| NeoForge | 26.3.0.41-beta |
-| Java | 25 |
-
-NeoForge for 26.x is still in beta, so APIs may change between releases.
 
 ## Features
 
-Every species has a complete wood family:
-
-- Log, Wood, Stripped Log, Stripped Wood (strip with an axe)
-- Planks, Stairs, Slab, Fence, Fence Gate, Door, Trapdoor, Pressure Plate, Button
-- Sign, Hanging Sign, Boat, Chest Boat
-- Leaves and Sapling
-
-All blocks burn like vanilla wood, work as furnace fuel, and are tagged for compatibility with other mods
-(`minecraft:logs`, `planks`, `leaves`, `saplings`, `wooden_*`, `c:` tags, plus one `ancient_trees:<species>_logs` tag per species).
+Every species has a complete wood family: Log, Wood, Stripped Log, Stripped Wood, Planks, Stairs, Slab, Fence, Fence Gate, Door,
+Trapdoor, Pressure Plate, Button, Sign, Hanging Sign, Boat, Chest Boat, Leaves and Sapling.
 
 ### Species
 
-| Species | Shape | Natural biomes | Leaves |
-|---|---|---|---|
-| Acemus | small tree, rarely a large one | forests, plains | autumn colors that shift over the days |
-| Cedrum | tiered conifer, also in shallow water | taiga, mountains | untinted |
-| Cerasu | small tree, rarely a large one | cherry grove, forests | blossom colors |
-| Delnas | straight trunk, flat crown | forests, plains | untinted |
-| Ewcaly | tall tree with leaf tufts | savanna, badlands | untinted |
-| Hekur | leaning, rooted trunk | swamps | biome foliage |
-| Kiparis | slim cypress, may stand in water | swamps, jungles | untinted |
-| Kulist | branching tree, may stand in water | forests, plains | green-yellow colors |
-| Lata | wide crown on many branches | forests, plains | biome foliage |
-| Nucis | wide crown on many branches | forests, plains | biome foliage |
-| Porffor | small tree, rarely a large one | forests, plains | untinted |
-| Salyx | willow with hanging leaf curtains (new shape) | swamps, rivers | untinted |
-| Tuopa | tall, narrow conifer | taiga, mountains | biome foliage |
-
-Several species have a rare large variant, as in the original.
-
-### Sapling brewing
-
-Ewcaly saplings brew like sugar (Potion of Swiftness), Kiparis saplings like a spider eye (Potion of Poison), as in the original.
+| Species | Shape | Natural biomes |
+|---|---|---|
+| Acemus | small tree, rarely a large one; autumn leaf colors | forests, plains |
+| Cedrum | tiered conifer, also in shallow water | taiga, mountains |
+| Cerasu | small tree, rarely a large one; blossom leaves | cherry grove, forests |
+| Delnas | straight trunk, flat crown | forests, plains |
+| Ewcaly | tall tree with leaf tufts | savanna, badlands |
+| Hekur | leaning, rooted trunk | swamps |
+| Kiparis | slim cypress, may stand in water | swamps, jungles |
+| Kulist | branching tree, may stand in water | forests, plains |
+| Lata | wide crown on many branches | forests, plains |
+| Nucis | wide crown on many branches | forests, plains |
+| Porffor | small tree, rarely a large one | forests, plains |
+| Salyx | willow with hanging leaf curtains | swamps, rivers |
+| Tuopa | tall, narrow conifer | taiga, mountains |
 
 ### Ancient Parcel
 
-The Ancient Parcel is found rarely in dungeon, mineshaft, stronghold, desert temple and jungle temple chests. Right-click to open it:
-most parcels crumble to dust, some contain a sapling (vanilla or Ancient Trees).
+Found rarely in dungeon, mineshaft, stronghold, desert temple and jungle temple chests. Right-click to open it:
+most parcels crumble to dust, some contain a sapling.
+
+### Sapling brewing
+
+Ewcaly saplings brew like sugar (Potion of Swiftness), Kiparis saplings like a spider eye (Potion of Poison).
 
 ## Configuration
 
@@ -71,37 +49,13 @@ most parcels crumble to dust, some contain a sapling (vanilla or Ancient Trees).
 | Option | Default | |
 |---|---|---|
 | `worldgen.naturalTrees` | `true` | natural trees on or off |
-| `worldgen.chunksPerTree` | `4` | one tree per this many chunks in a biome, shared between the species living there |
-| `saplings.leafDropMultiplier` | `1.0` | factor on the vanilla sapling drop chance from leaves (0 disables) |
+| `worldgen.chunksPerTree` | `4` | one tree per this many chunks in a biome |
+| `saplings.leafDropMultiplier` | `1.0` | factor on the sapling drop chance from leaves (0 disables) |
 | `parcels.chestChance` | `0.1` | chance for parcels in a chest (0 disables) |
-| `parcels.chestTables` | 7 vanilla chests | loot tables that can contain parcels, any mod's chests work too |
+| `parcels.chestTables` | 7 vanilla chests | loot tables that can contain parcels |
 
 Loot-table options apply after a world reload.
 
-## Changes compared to the original
-
-- Rewritten for Minecraft 26.3 and NeoForge; no dependency on Kore Sample, Forestry, Chisel, Storage Drawers or other mods.
-- Added Wood, Stripped Log, Stripped Wood, Fence, Fence Gate, Door, Trapdoor, Pressure Plate, Button, Sign, Hanging Sign and Boats.
-- Trees grow in the biomes that fit them instead of at random places everywhere (the original almost never generated natural trees).
-- Salyx was redesigned as a willow.
-- Branches are connected block by block, and leaves that would decay right away are not placed.
-- Naming follows vanilla (`Acemus Log` / `Acemus Wood`); in the original, the log was called "Wood".
-
-## Building
-
-```
-./gradlew build        # jar in build/libs
-./gradlew runClient    # start the game
-./gradlew runData      # regenerate src/generated/resources
-```
-
-Models, loot tables, recipes, tags, language files and worldgen JSON are generated by the data generators in
-`com.lays24mc.ancient_trees.datagen`. Do not edit `src/generated/resources` by hand.
-
 ## Credits and license
 
-- Original mod (Ancient Trees / Dendrology): ScottKillen, Blorph, Ruyuna, with German translation by MCManuelLP.
-- Rewrite for Minecraft 26.3 / NeoForge: Lays24MC.
-
-This rewrite is released under the MIT license. The original project was released under the
-[Unlicense](https://unlicense.org/) (public domain).
+Original mod by ScottKillen, Blorph and Ruyuna (German translation by MCManuelLP). Rewrite by Lays24MC, released under the MIT license.
