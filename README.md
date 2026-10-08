@@ -10,10 +10,6 @@ A rewrite of [Ancient Trees / Dendrology](https://github.com/scottkillen-minecra
 > has survived. In their wisdom, the Ancient Ones foresaw the Extinction and took steps to preserve trees within chests hidden in the
 > world. It is tragic that, for all the good they did, the Ancient Ones could not save themselves..._
 
-## Note
-
-This is a private hobby project. I port mods for fun in my free time, so I cannot guarantee compatibility with other mods.
-
 ## Features
 
 Every species has a complete wood family: Log, Wood, Stripped Log, Stripped Wood, Planks, Stairs, Slab, Fence, Fence Gate, Door,
@@ -63,3 +59,11 @@ Loot-table options apply after a world reload.
 ## Credits and license
 
 Original mod by ScottKillen, Blorph and Ruyuna (German translation by MCManuelLP). Rewrite by Lays24MC, released under the MIT license.
+
+This is a private hobby project that I port for fun in my free time, so I cannot guarantee compatibility with other mods.
+
+### Textures
+
+Most textures are based on Minecraft's own textures (boats, signs, doors and similar), recolored to match the matching wood types and adjusted to look more like vanilla. They remain the property of Mojang. I'm no pixel-art pro, so please don't expect too much from them.
+
+Not an official Minecraft product.
