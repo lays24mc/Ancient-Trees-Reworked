@@ -1,7 +1,7 @@
 package com.lays24mc.ancient_trees.world.feature;
 
+import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import java.util.ArrayDeque;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
@@ -162,12 +162,14 @@ public final class TreeBuilder implements TreePlacer {
 
     public void commit() {
         BlockPos below = origin.below();
-        if (level.getBlockState(below).is(Blocks.GRASS_BLOCK) || level.getBlockState(below).is(Blocks.PODZOL)
-                || level.getBlockState(below).is(Blocks.MYCELIUM)) {
+        BlockState ground = level.getBlockState(below);
+        if (ground.is(Blocks.GRASS_BLOCK) || ground.is(Blocks.PODZOL) || ground.is(Blocks.MYCELIUM)) {
             level.setBlock(below, Blocks.DIRT.defaultBlockState(), 19);
         }
 
-        Map<BlockPos, Integer> distance = new HashMap<>();
+        // Primitive map: no boxing of the distances
+        Object2IntOpenHashMap<BlockPos> distance = new Object2IntOpenHashMap<>(logs.size() + leaves.size());
+        distance.defaultReturnValue(-1);
         ArrayDeque<BlockPos> queue = new ArrayDeque<>();
         for (BlockPos pos : logs.keySet()) {
             distance.put(pos, 0);
@@ -175,7 +177,7 @@ public final class TreeBuilder implements TreePlacer {
         }
         while (!queue.isEmpty()) {
             BlockPos pos = queue.poll();
-            int next = distance.get(pos) + 1;
+            int next = distance.getInt(pos) + 1;
             if (next >= 7) {
                 continue;
             }
@@ -190,10 +192,11 @@ public final class TreeBuilder implements TreePlacer {
 
         logs.forEach((pos, state) -> level.setBlock(pos, state, 19));
         leaves.forEach((pos, state) -> {
-            if (!distance.containsKey(pos)) {
+            int leafDistance = distance.getInt(pos);
+            if (leafDistance < 0) {
                 return; // too far from the wood, would decay immediately
             }
-            BlockState result = state.setValue(BlockStateProperties.DISTANCE, distance.get(pos));
+            BlockState result = state.setValue(BlockStateProperties.DISTANCE, leafDistance);
             if (result.hasProperty(BlockStateProperties.WATERLOGGED)) {
                 result = result.setValue(BlockStateProperties.WATERLOGGED, level.getFluidState(pos).is(FluidTags.WATER));
             }

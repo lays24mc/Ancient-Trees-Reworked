@@ -1,8 +1,6 @@
 package com.lays24mc.ancient_trees.config;
 
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 public final class AncientTreesConfig {
@@ -17,8 +15,7 @@ public final class AncientTreesConfig {
             .defineInRange("worldgen.chunksPerTree", 4, 1, 10000);
 
     public static final ModConfigSpec.DoubleValue SAPLING_DROP_MULTIPLIER = BUILDER
-            .comment("Multiplier for the chance that leaves drop saplings. 1.0 is the vanilla chance (5 %), 0 disables drops.",
-                    "Takes effect after a world reload.")
+            .comment("Multiplier for the chance that leaves drop saplings. 1.0 is the vanilla chance (5 %), 0 disables drops.")
             .defineInRange("saplings.leafDropMultiplier", 1.0, 0.0, 20.0);
 
     public static final ModConfigSpec.DoubleValue PARCEL_CHEST_CHANCE = BUILDER
@@ -59,8 +56,8 @@ public final class AncientTreesConfig {
         return SPEC.isLoaded() ? PARCEL_CHEST_CHANCE.get().floatValue() : PARCEL_CHEST_CHANCE.getDefault().floatValue();
     }
 
-    public static Set<String> parcelChestTables() {
+    public static boolean isParcelChestTable(String table) {
         List<? extends String> tables = SPEC.isLoaded() ? PARCEL_CHEST_TABLES.get() : PARCEL_CHEST_TABLES.getDefault();
-        return tables.stream().collect(Collectors.toSet());
+        return tables.contains(table);
     }
 }

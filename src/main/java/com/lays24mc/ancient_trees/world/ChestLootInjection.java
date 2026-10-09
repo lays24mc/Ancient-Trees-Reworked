@@ -19,7 +19,7 @@ public final class ChestLootInjection {
     @SubscribeEvent
     public static void onLootTableLoad(LootTableLoadEvent event) {
         float chance = AncientTreesConfig.parcelChestChance();
-        if (chance > 0 && AncientTreesConfig.parcelChestTables().contains(event.getName().toString())) {
+        if (chance > 0 && AncientTreesConfig.isParcelChestTable(event.getName().toString())) {
             LootPool pool = LootPool.lootPool()
                     .setRolls(ContextIntProviders.exactly(1))
                     .when(LootItemRandomChanceCondition.randomChance(chance))
